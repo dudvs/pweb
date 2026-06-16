@@ -11,40 +11,41 @@
         }
 
         #conteudo{
-        background: #FFFFFF;
-        padding: 10px;
-        width: 900px;
-        margin-top: 30px;
-        margin-left: 220px;
+            background: #FFFFFF;
+            width: 450px;
+            height: 150px;
+            padding: 10px;
+
+            position: absolute;
+            top: 40px;
+            right: 0;
         }
         
         .caixa{
             background: red;
-            margin: 10px;
-            width: 100px                                                                                 ;
+            width: 100px;
             height: 100px;
-            max-width: 15vw;
-            max-height: 15vw;
-            color: #FFFFFF
+            color: white;
         }
 
         #relativo{
             position: relative;
             left: 30px;
+            top: 20px;
         }
 
         #absoluto{
             position: absolute;
             left: 30px;
-            top: 140px
+            top: 140px;
         }
 
         #fixo{
             position: fixed;
             left: 140px;
-            top: 45px;
+            top: 15px;
         }
-        
+
     </style>
 </head>
 <body>
@@ -61,9 +62,13 @@
     <div id="conteudo">
         Container div
 
+        <div id="conteudo">
+            Container div
+
         <div id="relativo" class="caixa">
             Relativo
         </div>
+    </div>
 
         <div id="absoluto" class="caixa">
             Absoluto
@@ -72,8 +77,6 @@
         <div id="fixo" class="caixa">
             Fixo
         </div>
-           
-    </div>
-    
+
 </body>
 </html>
