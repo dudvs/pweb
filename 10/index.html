@@ -7,7 +7,7 @@
 
     <style>
 
-        .menu{
+        nav{
             background: #EEE685;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
             font-size: 18px;
@@ -36,15 +36,94 @@
             text-decoration: none;
         }
 
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .noticia{
+            background: white;
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .noticia header{
+            color: #0066cc;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .imagem{
+            width: 120px;
+            float: right;
+            margin-left: 10px;
+        }
+
+        .noticia footer{
+            clear: both;
+            color: gray;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="menu">
-
+    <nav>
         <a href="https://www.google.com">Google</a> |
         <a href="https://www.techtudo.com.br">Tech Tudo</a> |
         <a href="https://www.maujor.com">Maujor</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="noticia">
+            <header>Tech Tudo</header>
+
+            <img src="imagens atv10/noticia1.jpg" class="imagem">
+
+            <p>Nova tecnologia promete revolucionar o ensino de programação para estudantes iniciantes.</p>
+
+            <footer> Publicado em 15/06/2026</footer>
+        </div>
+        
+        <div class="noticia">
+            <header>Google News</header>
+
+            <img src="imagens atv10/noticia2.jpg" class="imagem">
+
+            <p>Pesquisadores desenvolvem sistema inteligente para auxiliar professores em sala de aula.</p>
+
+            <footer>Publicado em 15/06/2026</footer>
+
+        </div>
+
+        <div class="noticia">
+            <header>Maujor News</header>
+
+            <img src="imagens atv10/noticia3.jpg" class="imagem">
+
+            <p>HTML5 e CSS continuam sendo as principais tecnologias para desenvolvimento web.</p>
+
+            <footer>Publicado em 15/06/2026</footer>
+
+        </div>
+
+        <div class="noticia">
+            <header>Portal Tech</header>
+
+            <img src="imagens atv10/noticia4.jpg" class="imagem">
+
+            <p>Flexbox facilita a criação de layouts responsivos para diferentes tamanhos de tela.</p>
+
+            <footer>Publicado em 15/06/2026</footer>
+
+        </div>
     </div>
     
 </body>
