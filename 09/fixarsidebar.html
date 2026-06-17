@@ -34,11 +34,14 @@
         border: 1px solid black;
     }
 
+    .principal{
+    display: flex;
+    }
+
     #content{
         background: #74c365;
-        width: 75%;
-        height: 450px;
-        float: left;
+        flex: 3;
+        min-height: 450px;
         text-align: center;
         line-height: 300px;
         border: 1px solid black;
@@ -47,20 +50,18 @@
 
     #sidebar{
         background: #8bc27c;
-        width: 25%;
-        height: 450px;
-        float: left;
+        flex: 1;
+        min-height: 450px;
         text-align: center;
         line-height: 300px;
         border: 1px solid black;
         box-sizing: border-box;
     }
 
-    #footer{
+   #footer{
         background: #c7923b;
         color: white;
         height: 50px;
-        clear: both;
         text-align: center;
         line-height: 50px;
         border: 1px solid black;
@@ -80,12 +81,16 @@
         HEADER
     </div>
 
-    <div id="content">
-        CONTENT
-    </div>
+    <div class="principal">
 
-    <div id="sidebar">
-        SIDE BAR
+        <div id="content">
+            CONTENT
+        </div>
+
+        <div id="sidebar">
+            SIDE BAR
+        </div>
+
     </div>
 
     <div id="footer">
