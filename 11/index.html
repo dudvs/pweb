@@ -5,114 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 11</title>
 
-    <style>
+<style>
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
 
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
-        }
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        background:#f4f4f4;
+    }
 
-        header{
-            background: #006699;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    body > header{
+        background:#006699;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
 
-        nav{
-            background: #EEE685;
-            padding: 12px;
-            text-align: center;
-        }
+    .conteudo{
+        display:flex;
+    }
 
-        nav a{
-            text-decoration: none;
-            color: #006699;
-            font-weight: bold;
-            margin: 0 10px;
-        }
+    nav{
+        width:18%;
+        background:#e8e8e8;
+        padding:20px;
 
-        nav a:hover{
-            background: #006699;
-            color: white;
-            padding: 6px 10px;
-            border-radius: 5px;
-        }
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
 
-        .conteudo{
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-            align-items: flex-start;
-        }
+    nav a{
+        text-decoration:none;
+        color:#006699;
+        font-weight:bold;
+    }
 
-        main{
-            width: 75%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    main{
+        width:57%;
+        padding:20px;
 
-        article{
-            width: calc(50% - 10px);
-            background: white;
-            border: 1px solid #ccc;
-            padding: 15px;
-        }
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+    }
 
-        article header{
-            background: none;
-            color: #0066cc;
-            padding: 0;
-            margin-bottom: 10px;
-            text-align: left;
-        }
+    article{
+        width:calc(50% - 10px);
+        background:white;
+        border:1px solid #ccc;
+        padding:15px;
+    }
 
-        article img{
-            width: 180px;
-            float: right;
-            margin-left: 10px;
-            margin-bottom: 10px;
-        }
+    article header{
+        background:none;
+        color:#0066cc;
+        padding:0;
+        margin-bottom:10px;
+    }
 
-        article footer{
-            border-top: 1px solid #ddd;
-            margin-top: 10px;
-            padding-top: 10px;
-            color: gray;
-            font-size: 14px;
-        }
+    article img{
+        width:140px;
+        float:right;
+        margin-left:10px;
+    }
 
-        aside{
-            width: 25%;
-            background: white;
-            border: 1px solid #ccc;
-            padding: 15px;
-        }
+    article footer{
+        clear:both;
+        margin-top:10px;
+        font-size:13px;
+        color:gray;
+    }
 
-        aside h2{
-            text-align: center;
-            margin-bottom: 20px;
-        }
 
-        aside img{
-            width: 100%;
-            margin-bottom: 20px;
-        }
+    aside{
+        width:25%;
+        background:#efefef;
+        padding:20px;
+    }
 
-        body > footer{
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    aside img{
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    body > footer{
+        background:#333;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
+    
+</style>
+
 </head>
 
 <body>
