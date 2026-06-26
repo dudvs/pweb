@@ -4,7 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 11</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header{
+            background: #006699;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav{
+            background: #EEE685;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #006699;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover{
+            background: #006699;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 5px;
+        }
+
+        .conteudo{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            align-items: flex-start;
+        }
+
+        main{
+            width: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        article{
+            width: calc(50% - 10px);
+            background: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        article header{
+            background: none;
+            color: #0066cc;
+            padding: 0;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        article img{
+            width: 180px;
+            float: right;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        article footer{
+            border-top: 1px solid #ddd;
+            margin-top: 10px;
+            padding-top: 10px;
+            color: gray;
+            font-size: 14px;
+        }
+
+        aside{
+            width: 25%;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        aside h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        aside img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        body > footer{
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
@@ -22,34 +132,119 @@
 
         <article class="noticia">
 
-        <header>
-            <h2>Nova tecnologia promete revolucionar o ensino</h2>
-        </header>
+            <header>
+                <h2>Nova tecnologia promete revolucionar o ensino</h2>
+            </header>
 
-        <section>
+            <section>
 
-            <img src="imagens atv11/imagem1.jpg" alt="Tecnologia">
+                <img src="imagens atv11/imagem1.jpg" alt="Tecnologia">
 
-            <p>Pesquisadores desenvolveram um sistema inteligente que poderá auxiliar professores e estudantes durante as aulas, tornando o aprendizado mais eficiente.</p>
+                <p>Pesquisadores desenvolveram um sistema inteligente que poderá auxiliar professores e estudantes durante as aulas, tornando o aprendizado mais eficiente.</p>
 
-        </section>
+            </section>
 
-        <footer>
+            <footer>
 
-            <p>Autor: Maria Eduarda</p>
+                <p>Autor: Maria Eduarda</p>
 
-            <time datetime="2026-06-23">
-                Publicado em 23/06/2026
-            </time>
+                <time datetime="2026-06-23">
+                    Publicado em 23/06/2026
+                </time>
 
-        </footer>
+            </footer>
 
-    </article>
+        </article>
 
+        <article class="noticia">
+
+            <header>
+                <h2>Inteligência Artificial auxilia professores</h2>
+            </header>
+
+            <section>
+
+                <img src="imagens atv11/imagem2.jpg" alt="IA">
+
+                <p>Ferramentas de inteligência artificial estão sendo utilizadas para apoiar docentes na criação de atividades e avaliações.</p>
+
+            </section>
+
+            <footer>
+
+                <p>Autor: Maria Eduarda</p>
+
+                <time datetime="2026-06-23">
+                    Publicado em 23/06/2026
+                </time>
+
+            </footer>
+
+        </article>
+
+        <article class="noticia">
+
+            <header>
+                <h2>HTML5 facilita a criação de páginas modernas</h2>
+            </header>
+
+            <section>
+
+                <img src="imagens atv11/imagem3.jpg" alt="HTML5">
+
+                <p>As novas tags semânticas tornam o código mais organizado, legível e fácil de manter.</p>
+
+            </section>
+
+            <footer>
+
+                <p>Autor: Kaylane Rodrigues</p>
+
+                <time datetime="2026-06-23">
+                    Publicado em 23/06/2026
+                </time>
+
+            </footer>
+
+        </article>
+
+        <article class="noticia">
+
+            <header>
+                <h2>O impacto da ia na fotografia</h2>
+            </header>
+
+            <section>
+
+                <img src="imagens atv11/imagem4.jpg" alt="Fotografia">
+
+                <p>A inteligência artificial transformou a fotografia ao democratizar a criação de imagens e automatizar a edição.</p>
+
+            </section>
+
+            <footer>
+
+                <p>Autor: Felicia Araujo</p>
+
+                <time datetime="2026-06-23">
+                    Publicado em 23/06/2026
+                </time>
+
+            </footer>
+
+        </article>
 
     </main>
 
     <aside>
+
+            <h2>Publicidade</h2>
+
+        <img src="imagens atv11/banner.camera.png" alt="Banner Camera">
+
+        <br><br>
+
+        <img src="imagens atv11/banner.pc.png" alt="Banner Notebook">
 
     </aside>
 
