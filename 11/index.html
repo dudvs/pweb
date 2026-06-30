@@ -46,16 +46,16 @@
     }
 
     main{
-        width:57%;
-        padding:20px;
-
+        flex:1;
         display:flex;
         flex-wrap:wrap;
         gap:20px;
+        padding:20px;
     }
 
     article{
-        width:calc(50% - 10px);
+        flex:1 1 45%;
+        min-width:320px;
         background:white;
         border:1px solid #ccc;
         padding:15px;
@@ -83,7 +83,8 @@
 
 
     aside{
-        width:25%;
+        width:260px;
+        flex-shrink:0;
         background:#efefef;
         padding:20px;
     }
@@ -110,132 +111,136 @@
         <h1>Portal de Notícias</h1>
     </header>
 
-    <nav>
-        <a href="#">Tecnologia</a> |
-        <a href="#">Ciência</a> |
-        <a href="#">Economia</a> |
-        <a href="#">Educação</a>
-    </nav>
+   <div class="conteudo">
 
-    <main>
+        <nav>
+            <a href="#">Tecnologia</a> 
+            <a href="#">Ciência</a> 
+            <a href="#">Economia</a> 
+            <a href="#">Educação</a>
+        </nav>
 
-        <article class="noticia">
+        <main>
 
-            <header>
-                <h2>Nova tecnologia promete revolucionar o ensino</h2>
-            </header>
+            <article class="noticia">
 
-            <section>
+                <header>
+                    <h2>Nova tecnologia promete revolucionar o ensino</h2>
+                </header>
 
-                <img src="imagens atv11/imagem1.jpg" alt="Tecnologia">
+                <section>
 
-                <p>Pesquisadores desenvolveram um sistema inteligente que poderá auxiliar professores e estudantes durante as aulas, tornando o aprendizado mais eficiente.</p>
+                    <img src="imagens atv11/imagem1.jpg" alt="Tecnologia">
 
-            </section>
+                    <p>Pesquisadores desenvolveram um sistema inteligente que poderá auxiliar professores e estudantes durante as aulas, tornando o aprendizado mais eficiente.</p>
 
-            <footer>
+                </section>
 
-                <p>Autor: Maria Eduarda</p>
+                <footer>
 
-                <time datetime="2026-06-23">
-                    Publicado em 23/06/2026
-                </time>
+                    <p>Autor: Maria Eduarda</p>
 
-            </footer>
+                    <time datetime="2026-06-23">
+                        Publicado em 23/06/2026
+                    </time>
 
-        </article>
+                </footer>
 
-        <article class="noticia">
+            </article>
 
-            <header>
-                <h2>Inteligência Artificial auxilia professores</h2>
-            </header>
+            <article class="noticia">
 
-            <section>
+                <header>
+                    <h2>Inteligência Artificial auxilia professores</h2>
+                </header>
 
-                <img src="imagens atv11/imagem2.jpg" alt="IA">
+                <section>
 
-                <p>Ferramentas de inteligência artificial estão sendo utilizadas para apoiar docentes na criação de atividades e avaliações.</p>
+                    <img src="imagens atv11/imagem2.jpg" alt="IA">
 
-            </section>
+                    <p>Ferramentas de inteligência artificial estão sendo utilizadas para apoiar docentes na criação de atividades e avaliações.</p>
 
-            <footer>
+                </section>
 
-                <p>Autor: Maria Eduarda</p>
+                <footer>
 
-                <time datetime="2026-06-23">
-                    Publicado em 23/06/2026
-                </time>
+                    <p>Autor: Maria Eduarda</p>
 
-            </footer>
+                    <time datetime="2026-06-23">
+                        Publicado em 23/06/2026
+                    </time>
 
-        </article>
+                </footer>
 
-        <article class="noticia">
+            </article>
 
-            <header>
-                <h2>HTML5 facilita a criação de páginas modernas</h2>
-            </header>
+            <article class="noticia">
 
-            <section>
+                <header>
+                    <h2>HTML5 facilita a criação de páginas modernas</h2>
+                </header>
 
-                <img src="imagens atv11/imagem3.jpg" alt="HTML5">
+                <section>
 
-                <p>As novas tags semânticas tornam o código mais organizado, legível e fácil de manter.</p>
+                    <img src="imagens atv11/imagem3.jpg" alt="HTML5">
 
-            </section>
+                    <p>As novas tags semânticas tornam o código mais organizado, legível e fácil de manter.</p>
 
-            <footer>
+                </section>
 
-                <p>Autor: Kaylane Rodrigues</p>
+                <footer>
 
-                <time datetime="2026-06-23">
-                    Publicado em 23/06/2026
-                </time>
+                    <p>Autor: Kaylane Rodrigues</p>
 
-            </footer>
+                    <time datetime="2026-06-23">
+                        Publicado em 23/06/2026
+                    </time>
 
-        </article>
+                </footer>
 
-        <article class="noticia">
+            </article>
 
-            <header>
-                <h2>O impacto da ia na fotografia</h2>
-            </header>
+            <article class="noticia">
 
-            <section>
+                <header>
+                    <h2>O impacto da ia na fotografia</h2>
+                </header>
 
-                <img src="imagens atv11/imagem4.jpg" alt="Fotografia">
+                <section>
 
-                <p>A inteligência artificial transformou a fotografia ao democratizar a criação de imagens e automatizar a edição.</p>
+                    <img src="imagens atv11/imagem4.jpg" alt="Fotografia">
 
-            </section>
+                    <p>A inteligência artificial transformou a fotografia ao democratizar a criação de imagens e automatizar a edição.</p>
 
-            <footer>
+                </section>
 
-                <p>Autor: Felicia Araujo</p>
+                <footer>
 
-                <time datetime="2026-06-23">
-                    Publicado em 23/06/2026
-                </time>
+                    <p>Autor: Felicia Araujo</p>
 
-            </footer>
+                    <time datetime="2026-06-23">
+                        Publicado em 23/06/2026
+                    </time>
 
-        </article>
+                </footer>
 
-    </main>
+            </article>
 
-    <aside>
+        </main>
 
-            <h2>Publicidade</h2>
+        <aside>
 
-        <img src="imagens atv11/banner.camera.png" alt="Banner Camera">
+                <h2>Publicidade</h2>
 
-        <br><br>
+            <img src="imagens atv11/banner.camera.png" alt="Banner Camera">
 
-        <img src="imagens atv11/banner.pc.png" alt="Banner Notebook">
+            <br><br>
 
-    </aside>
+            <img src="imagens atv11/banner.pc.png" alt="Banner Notebook">
+
+        </aside>
+
+    </div>
 
     <footer>
         2026 - Portal de Notícias
