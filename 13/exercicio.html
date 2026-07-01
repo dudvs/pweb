@@ -36,6 +36,10 @@
             margin:30px 0 60px;
         }
 
+    </style>
+
+    <style>
+
         .formas {
             display: flex;
             justify-content:center;
@@ -44,44 +48,39 @@
             margin-top:50px;
         }
 
-        .flor {
-            width:220px;
-            height:220px;
-            position:relative;
+        .flor{
+            width:200px;
+            height:200px;
+            display:grid;
+            grid-template-columns:100px 100px;
+            grid-template-rows:100px 100px;
         }
 
         .petala{
-            width:90px;
-            height:110px;
-            position:absolute;
-            border-radius:50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width:100px;
+            height:100px;
         }
 
         .petala-vermelha{
             background:red;
-            margin-top: -55px;
-            margin-left: -45px;
+            border-radius:100% 0 100% 0;
         }
 
         .petala-amarela{
             background:orange;
-            margin-top: -55px;
-            margin-left: 45px;
+            border-radius:0 100% 0 100%;
         }
 
         .petala-verde{
             background:green;
-            margin-top: 55px;
-            margin-left: -45px;
+            border-radius:0 100% 0 100%;
+            transform:rotate(180deg);
         }
 
         .petala-roxa{
             background:purple;
-            margin-top: 55px;
-            margin-left: 45px;
+            border-radius:100% 0 100% 0;
+            transform:rotate(180deg);
         }
 
         .circulo{
@@ -115,6 +114,8 @@
         }
 
     </style>
+
+    
 </head>
 <body>
 
