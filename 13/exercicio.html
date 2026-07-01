@@ -8,42 +8,54 @@
 
     <style>
 
-        .sem-box{
-            width:100px;
+        .sem-box,
+        .com-box{
+            width:220px;
             padding:20px;
-            border:15px solid red;
+            border:15px solid;
             background:#ddd;
-            float:left;
-            margin:20px;
+            text-align:center;
+        }
+
+        .sem-box{
+            border-color:red;
         }
 
         .com-box{
-            width:100px;
-            padding:20px;
-            border:15px solid blue;
-            background:#ddd;
-            float:left;
-            margin:20px;
+            border-color:blue;
 
             -webkit-box-sizing:border-box;
             -moz-box-sizing:border-box;
             box-sizing:border-box;
         }
 
+        .container-box{
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            margin:30px 0;
+        }
+
     </style>
 </head>
 <body>
 
-    <p><a href="index.html">← Voltar</a></p>
+    <p><a href="index.html"> ← Voltar</a></p>
 
-    <h1>Criação das formas utilizando border-radius</h1>
+    <h2>Demonstração da propriedade Box-sizing</h2>
 
-    <div class="sem-box">
-        Sem box-sizing
-    </div>
+    <p>O <strong>box-sizing</strong> altera a forma como o navegador calcula a largura e a altura de um elemento.</p>
 
-    <div class="com-box">
-        Com box-sizing
+    <div class="container-box">
+
+        <div class="sem-box">
+            Sem box-sizing
+        </div>
+
+        <div class="com-box">
+            Com box-sizing
+        </div>
+
     </div>
     
 </body>
