@@ -51,44 +51,43 @@
         }
 
         .petala{
-            width:90px;
-            height:90px;
+            width:80px;
+            height:100px;
             position:absolute;
+            border-radius:50%;
         }
         
-        .vermelha{
+        .petala-vermelha{
             background:red;
-            top:10px;
-            left:10px;
-            border-radius:100% 0 100% 0;
+            top:5px;
+            left:25px;
+            transform:rotate(-45deg);
         }
 
-        .amarela{
+        .petala-amarela{
             background:orange;
-            top:10px;
-            right:10px;
-            border-radius:0 100% 0 100%;
+            top:5px;
+            right:25px;
+            transform:rotate(45deg);
         }
 
-        .verde{
+        .petala-verde{
             background:green;
-            bottom:10px;
-            left:10px;
-            border-radius:0 100% 0 100%;
-            transform: rotate(180deg);
+            bottom:5px;
+            left:25px;
+            transform:rotate(45deg);
         }
 
-        .roxa{
+        .petala-roxa{
             background:purple;
-            bottom:10px;
-            right:10px;
-            border-radius:100% 0 100% 0;
-            transform: rotate(180deg);
+            bottom:5px;
+            right:25px;
+            transform:rotate(-45deg);
         }
 
         .circulo{
-            width:180px;
-            height:180px;
+            width:200px;
+            height:200px;
             display:flex;
             flex-wrap:wrap;
             border-radius:50%;
@@ -96,8 +95,8 @@
         }
 
         .quadrante{
-            width:90px;
-            height:90px;
+            width:100px;
+            height:100px;
         }
 
         .quadrante.vermelho{
@@ -151,10 +150,10 @@
 
         <div class="flor">
 
-            <div class="petala vermelha"></div>
-            <div class="petala amarela"></div>
-            <div class="petala verde"></div>
-            <div class="petala roxa"></div>
+            <div class="petala petala-vermelha"></div>
+            <div class="petala petala-amarela"></div>
+            <div class="petala petala-verde"></div>
+            <div class="petala petala-roxa"></div>
 
         </div>
 
