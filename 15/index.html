@@ -18,11 +18,13 @@
             animation-duration: 5s;
             animation-delay: 3s;
             animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
         }
 
-        .box: hover{
+        .box:hover{
             border: solid 5px black;
-            trasition: border 3s 2s;
+            transition: border 3s 2s;
         }
 
         @keyframes minhaAnimacao{
@@ -32,7 +34,7 @@
             }
 
             to{
-                letf: 50px;
+                left: 50px;
                 background: blue;
                 border-radius: 100px;
             }
