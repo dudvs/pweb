@@ -22,6 +22,15 @@
             margin:15px;
         }
 
+        nav ul{
+            padding:0;
+        }
+
+        nav li{
+            display:inline-block;
+            margin:15px;
+        }
+
         @media (max-width:600px){
 
             nav{
@@ -32,6 +41,11 @@
                 display:block;
                 margin:10px;
             }
+
+            nav li{
+                display: list-item;
+                margin: 8px 0;
+            }
         }
 
     </style>
@@ -40,13 +54,13 @@
 <body>
 
     <nav>
-
-        <a href="#">Menu 01</a>
-        <a href="#">Menu 02</a>
-        <a href="#">Menu 03</a>
-        <a href="#">Menu 04</a>
-        <a href="#">Menu 05</a>
-
+        <ul>
+            <li><a href="#">Menu 01</a></li>
+            <li><a href="#">Menu 02</a></li>
+            <li><a href="#">Menu 03</a></li>
+            <li><a href="#">Menu 04</a></li>
+            <li><a href="#">Menu 05</a></li>
+        </ul>
     </nav>
     
 </body>
